@@ -1,0 +1,299 @@
+/* Variables */
+:root {
+  --color-bg: #020202;
+  --color-green: #63DC3E;
+  --color-white: #ffffff;
+  --color-gray: #8C8C8C;
+  --color-violet: #753EDA;
+  --color-bg-photo: #f3f3f3;
+  --color-bg-input: #36393F;
+
+  --font-primary: 'Roboto';
+}
+
+/* Reset */
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+abbr {
+  text-decoration: none !important;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border-width: 0;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+dd {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+cite {
+  font-style: normal;
+}
+
+fieldset {
+  border-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  font-family: var(--font-primary), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.6rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Hero */
+.hero {
+  background-image: url(./assets/bg-hero.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 550px auto;
+  height: 90vh;
+  padding-top: 70px;
+}
+
+.hero-label {
+  margin-bottom: 35px;
+}
+
+.hero-title-secondary {
+  color: var(--color-green);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.hero-title {
+  font-size: 5.6rem;
+  font-weight: 700;
+}
+
+.hero-content {
+  margin: 15px 0 50px;
+  color: var(--color-gray);
+  font-size: 1.4rem;
+  line-height: 20px;
+}
+
+.hero-button {
+  color: var(--color-white);
+  background-color: var(--color-violet);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 10px;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.hero-button-text {
+  margin-right: 8px;
+}
+
+/* Countdown */
+.countdown {
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Showcase */
+.showcase-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.showcase-products {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  grid-template-rows: auto;
+}
+
+/* Product */
+.product-photo {
+  border-radius: 2px;
+  overflow: hidden;
+  line-height: 0;
+  text-align: center;
+  background-color: var(--color-bg-photo);
+}
+
+.product-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.product-info-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-badge {
+  border-radius: 50px;
+  background-color: var(--color-green);
+  color: var(--color-bg);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 4px 8px;
+}
+
+.product-prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-price {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+.product-price.old {
+  text-decoration: line-through;
+  color: var(--color-gray);
+  margin-right: 5px;
+}
+
+/* Newsletter */
+.newsletter {
+  margin-top: 150px;
+}
+
+.newsletter-icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.newsletter-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 25px 0 15px;
+}
+
+.newsletter-text {
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--color-gray);
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.newsletter input {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  padding: 10px;
+  color: var(--color-white);
+  background-color: var(--color-bg-input);
+  font-size: 1.6rem;
+}
+
+.newsletter button {
+  height: 100%;
+  color: var(--color-white);
+  background-color: var(--color-violet);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+/* Footer */
+.footer {
+  margin-top: 150px;
+  padding: 10px 0;
+  text-align: center
+}
+
+.footer-text {
+  margin-bottom: 10px;
+}
+
+.footer-text a {
+  font-weight: 700;
+  text-decoration: underline;
+}
