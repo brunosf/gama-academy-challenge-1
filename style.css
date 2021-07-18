@@ -5,6 +5,7 @@
   --color-white: #ffffff;
   --color-gray: #8C8C8C;
   --color-violet: #753EDA;
+  --color-red: #ff6767;
   --color-bg-photo: #f3f3f3;
   --color-bg-input: #36393F;
 
@@ -351,7 +352,7 @@ body {
   outline: none;
 }
 
-.newsletter button {
+.newsletter-button {
   height: 100%;
   color: var(--color-white);
   background-color: var(--color-violet);
@@ -364,8 +365,29 @@ body {
   font-weight: 700;
 }
 
-.newsletter button span {
+.newsletter-button span {
   margin-right: 5px;
+}
+
+.newsletter-info {
+  width: 50%;
+  display: block;
+  grid-gap: 10px;
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+.newsletter-message {
+  color: var(--color-green);
+}
+
+.newsletter-errors {
+  color: var(--color-red);
+}
+
+.newsletter-new-email {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {

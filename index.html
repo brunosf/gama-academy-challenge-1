@@ -177,13 +177,19 @@
         <h2 class="newsletter-title">Seja o primeiro a receber nossas ofertas da Black Friday</h2>
         <p class="newsletter-text">Assine nossa newsletter e receba todas as nossas promoções</p>
 
-        <form action="" method="post" class="newsletter-form">
+        <form action="" method="post" id="newsletter-form" class="newsletter-form">
           <input type="email" name="newsletter-input-email" id="newsletter-input-email" placeholder="brucewayne@gmail.com">
-          <button type="submit">
+          <button type="submit" class="newsletter-button">
             <span>Assinar</span>
             <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12h16M13 5l7 7-7 7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
         </form>
+
+
+        <div class="newsletter-info">
+          <p class="newsletter-message"></p>
+          <ul class="newsletter-errors"></ul>
+        </div>
       </div>
     </section>
 
