@@ -44,7 +44,7 @@
 
   simplyCountdown('.countdown', {
     year: 2021,
-    month: 11,
+    month: 9,
     day: 26,
     words: {
         days: { singular: 'dia', plural: 'dias' },

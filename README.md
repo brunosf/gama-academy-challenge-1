@@ -13,4 +13,4 @@ Inspirado no projeto da autora [Julia Jakubiak](https://dribbble.com/juliajakubi
 
 ## Hospedado com netlify
 
-[gamaacademydesafio.netlify.app](gamaacademydesafio.netlify.app)
+[gamaacademydesafio.netlify.app](http://gamaacademydesafio.netlify.app)
