@@ -32,6 +32,37 @@
     })
   });
 
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+  });
+
+  simplyCountdown('.countdown', {
+    year: 2021,
+    month: 11,
+    day: 26,
+    words: {
+        days: { singular: 'dia', plural: 'dias' },
+        hours: { singular: 'hora', plural: 'horas' },
+        minutes: { singular: 'minuto', plural: 'minutos' },
+        seconds: { singular: 'segundo', plural: 'segundos' }
+    },
+    plural: true,
+    inline: false,
+    inlineClass: 'simply-countdown-inline',
+    enableUtc: true,
+    refresh: 1000,
+    sectionClass: 'simply-section',
+    amountClass: 'simply-amount',
+    wordClass: 'simply-word',
+    zeroPad: false,
+    countUp: false,
+  });
 
 
   function isValidEmail(email) {

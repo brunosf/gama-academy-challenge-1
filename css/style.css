@@ -114,7 +114,7 @@ body {
 
 /* Hero */
 .hero {
-  background-image: url(./assets/bg-hero.png);
+  background-image: url(../assets/bg-hero.png);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 550px auto;
@@ -209,6 +209,49 @@ body {
   font-size: 4rem;
   font-weight: 500;
   text-align: center;
+}
+
+.hero .simply-countdown {
+  display: flex;
+  justify-content: center;
+}
+
+.simply-section {
+  width: 100px;
+}
+
+.hero .simply-countdown .simply-section div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.hero .simply-countdown .simply-section:not(:last-child) div:after {
+  content: ":";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.hero .simply-word {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.countdown .simply-amount {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .simply-amount {
+    font-size: 5.2rem;
+  }
+
+  .hero .simply-word {
+    font-size: 2rem;
+  }
 }
 
 /* Showcase */
@@ -324,7 +367,7 @@ body {
 }
 
 .newsletter-text {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-align: center;
   color: var(--color-gray);
 }
