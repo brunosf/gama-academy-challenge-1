@@ -1,0 +1,25 @@
+{
+  "name": "gama-challenge-1",
+  "description": "Criar um sistema de e-commerce para cadastro de email na landing page para recebimento de novidades e promoções.",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunosf/gama-academy-challenge-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunosf/gama-academy-challenge-1/issues"
+  },
+  "homepage": "https://github.com/brunosf/gama-academy-challenge-1#readme",
+  "devDependencies": {
+    "ts-loader": "^9.2.4",
+    "typescript": "^4.3.5",
+    "webpack": "^5.46.0",
+    "webpack-cli": "^4.7.2"
+  }
+}

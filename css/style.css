@@ -144,6 +144,11 @@ body {
   line-height: 20px;
 }
 
+.hero-button-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .hero-button {
   color: var(--color-white);
   background-color: var(--color-violet);
@@ -154,6 +159,12 @@ body {
   padding: 10px;
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+.hero-button.outline {
+  background-color: transparent;
+  border: 2px solid var(--color-white);
+  margin-left: 20px;
 }
 
 .hero-button-text {
